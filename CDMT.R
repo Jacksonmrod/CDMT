@@ -11,7 +11,7 @@ Chelsa.TS<-function() {
         variable2<-"CHELSA_preccor_"
       }
     }
-  first.year<- readline(prompt="select first year for the beginning of your TS between 1980 e 2019:")
+  first.year<- readline(prompt="select first year for the beginning of your TS (1980-2019):")
   last.year<-readline(prompt="select the last year:")
   if(last.year<first.year){stop(print("the last year must be >= first year"))
   } else {
