@@ -6,8 +6,8 @@ Chelsa.TS<-function() {
   variable<-readline(prompt="select a variable (tasmax, tasmin ou pr):")
   
   if(variable=="tasmax"){
-    variable2<-"CHELSA_tmax_"}else{
-      if(variable=="tasmin"){variable2<-"CHELSA_tmin_"}else{
+    variable2<-"CHELSA_tasmax_"}else{
+      if(variable=="tasmin"){variable2<-"CHELSA_tasmin_"}else{
         variable2<-"CHELSA_pr_"
       }
     }
