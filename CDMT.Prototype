@@ -2,13 +2,13 @@
 
 Chelsa.TS<-function() {
   options(encoding = "UTF-8") 
-  site<-"https://envidatrepo.wsl.ch/uploads/chelsa/chelsa_V2/GLOBAL/monthly/"
-  variable<-readline(prompt="select a variable (tasmax, taasmin ou pr):")
+  site<-"https://os.zhdk.cloud.switch.ch/envicloud/chelsa/chelsa_V2/GLOBAL/monthly/"
+  variable<-readline(prompt="select a variable (tasmax, tasmin ou pr):")
   
   if(variable=="tasmax"){
     variable2<-"CHELSA_tmax_"}else{
       if(variable=="tasmin"){variable2<-"CHELSA_tmin_"}else{
-        variable2<-"CHELSA_preccor_"
+        variable2<-"CHELSA_pr_"
       }
     }
   first.year<- readline(prompt="select first year for the beginning of your TS (1980-2019):")
