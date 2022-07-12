@@ -20,7 +20,7 @@ Chelsa.TS<-function() {
     last.month<-12
     site2<-paste0(site,variable,"/",variable2,months,"_",period,"_V.2.1.tif")
     site3<-as.list(site2)
-    names<-paste0("Chelsa",variable,"_",months,"_",period,"_V.2.1.tif")
+    names<-paste0("Chelsa","_",variable,"_",months,"_",period,"_V.2.1.tif")
     names[12]
     for(i in 1:length(site2)){
       download.file((site2[i]), mode = "wb", c(names[i]))
